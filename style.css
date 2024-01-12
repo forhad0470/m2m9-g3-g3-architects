@@ -1,4 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+/* shared style start */
 * {
   font-family: "Work Sans", sans-serif;
+}
+.btn-primary {
+  border-radius: 8px;
+  color: #FFF;
+  background: #ff900e;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  cursor: pointer;
+  border: 0;
+
+}
+.text-light-gray {
+    color: #727272;
+  }
+/* header section start */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 50px 240px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131313;
+}
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav ul a {
+  text-decoration: none;
+  color: #424242;
+}
+/* banner section  */
+
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+.banner img{
+    margin-top: 30px;
+    width: 100%;
+}
+/* header section end */
+/* main section */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.team-container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    margin: 85px 0 130px 0;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    
+}
+.team-content{
+    padding-right: 70px;
+    padding-left: 70px;
+    
+}
+.team-content-title{
+    font-size: 2.8rem;
+
+}
+.team-content-title .quick-list{
+    color:#727272;
+    font-weight: 500;
+}
+.team-content-title .features{
+    color: #FF900E;
+    font-weight: 700;
+}
+/* feature section start */
+
+
+
+/* feature section end */
+
+
+
+
+/* Responsive media queries */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav, 
+    .team-container {
+        flex-direction: column;
+    }
+    .team-img-container{
+
+        grid-template-columns: 1fr;
+    }
+    .team-content{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav,
+    .team-container{
+        flex-direction: column;
+    }
 }
